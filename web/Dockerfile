@@ -5,8 +5,8 @@ WORKDIR /app
 
 RUN python3 -m venv /opt/venv
 
-RUN /opt/venv/binpip install pip --upgrade &&\
-    /opt/venv/binpip install -r requirements.txt &&\
+RUN /opt/venv/binpip install pip --upgrade && \
+    /opt/venv/binpip install -r requirements.txt && \
     chmod +x entrypoint.sh
 
 
